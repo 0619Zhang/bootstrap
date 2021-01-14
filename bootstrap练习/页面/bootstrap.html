@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bs/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        #p1 {
+            font-size: 40px;
+            color: #20A57F;
+        }
+
+        #p2 {
+            font-size: 25px;
+            color: grey;
+        }
+
+        .list-inline>li {
+            height: 100px;
+            background-color: pink;
+           line-height: 100px;
+           text-align: center;
+           box-shadow: 0 0 20px 1px grey;
+        }
+        img{
+            margin-left: 10%;
+        }
+        #carousel-id{
+            margin-top: -20px;
+        }
+        #p_1 {
+            font-size: 40px;
+            color: #20A57F;
+        }
+
+        #p_2 {
+            font-size: 20px;
+            color: grey;
+        }
+        .content2>div{
+            margin-top: 15px;
+            text-align: center;
+        }
+        .content2_text>img{
+            border-bottom:5px solid #EFF5A3;
+        }
+        .p_1{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .content3_text>div{
+            width: 25%;
+            border: 1px solid rgb(218, 218, 218);
+            border-radius: 20px;
+            padding: 30px 10px;
+            transform: translateX(50%);
+            float: left;
+        }
+        .content3_box1{
+            margin-top: 2%;
+        }
+        .content3_box2{
+            box-shadow: 0 0 30px 1px grey;
+        }
+        .content3_box3{
+            margin-top: 2%;
+        }
+       .footer{
+           width: 100%;
+           /* height: 250px; */
+           background-color: #E4EAEE;
+           padding: 20px 0;
+       }
+       .as>li{
+           list-style-type: none;
+           float: left;
+       }
+       .as>li h4{
+           margin-bottom: 25px;
+       }
+       .as2>li{
+            list-style-type: none;
+            float: left;
+       }
+       .as2>li img{
+           width:60%;
+          
+       }
+       .as2>li p{
+           text-align: center;
+       }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../img/logo_09.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-gift"></span>通用英语</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-pencil"></span>海外考试</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-globe"></span>青少英语</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-pawn"></span>行业英语</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>在线购买</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>全球师资</a></li>
+                    <li>
+                            <a href="#" data-toggle="dropdown"> 更多栏目<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class=" text-center">全球师资</a> </li>
+                                <li><a href="#" class=" text-center">学院案例</a></li>
+                                <li><a href="#" class=" text-center">免费体验</a></li>
+                                <li><a href="#" class=" text-center">英语胶囊</a></li>
+                                <li><a href="#" class=" text-center">精彩动态</a></li>
+                            </ul>
+                       
+                    </li>
+            </ul>
+            <form action="##" class="navbar-form navbar-right" rol="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="请输入关键词" />
+                </div>
+              <button type="submit" class="btn btn-danger">搜索</button>
+            </form>
+        </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <!-- 轮播 -->
+    <div id="carousel-id" class="carousel slide" data-ride="carousel" data-interval='2000'>
+        <div class="container">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item">
+                <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" style="width: 100%;" alt="First slide" src="https://www.iqbar.net/images/banner5.jpg">
+               
+            </div>
+            <div class="item">
+                <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="https://www.iqbar.net/images/banner2.jpg?2">
+               
+            </div>
+            <div class="item active">
+                <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="https://www.iqbar.net/images/banner3.jpg">
+               
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    </div>
+
+
+
+      <!-- 内容1 -->
+    <div class="container" style="margin-top: 100px;">
+        <div id="big">
+            <div class="row col-md-12 col-sm-12 col-xs-12">
+                <p id="p1" class="text-center">6+课程体系，总有一款适合你</p>
+            </div>
+            <div class="row col-md-12 col-sm-12 col-xs-12">
+                <p id="p2" class="text-center">10教育行业背景，1000专业研发团队，针对不同学习需求，打造全面完善的课程体系</p>
+            </div>
+            <div class="row col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 10px;">
+                <img src="../img2/cover.png" alt="" class="img-responsive">
+            </div>
+            <div class="row " >
+                <ul class="list-inline">
+                    <li class="col-md-4 col-sm-6 col-xs-12">通用口语</li>
+                    <li class="col-md-4 col-sm-6 col-xs-12">海外考试</li>
+                    <li class="col-md-4 col-sm-6 col-xs-12">青少英语</li>
+                    <li class="col-md-4 col-sm-6 col-xs-12">行业英语</li>
+                    <li class="col-md-4 col-sm-6 col-xs-12">旅游英语</li>
+                    <li class="col-md-4 col-sm-6 col-xs-12">面试英语</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容2 -->
+    <div class="container content2" style="margin-top: 100px;">
+        <div class="row col-md-12 col-sm-12 col-xs-12">
+            <p id="p_1" class="text-center">有伴有爱有力量，再也不怕学习没动力</p>
+        </div>
+        <div class="row col-md-12 col-sm-12 col-xs-12">
+            <p id="p_2" class="text-center">学习从来不是轻松事，与其孤身奋战，不如找到志同道合小伙伴一起坚持到底，免费的哦</p>
+        </div>
+        <div class="row content2_text">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <img src="../img2/01.jpg" class="img-responsive center-block" >
+                <p class="p_1">学习太苦，坚持不住</p> 
+                <p class="text-center">学伴功能，一键添加小伙伴。 免费一起学，互相督促进步快!</p> 
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <img src="../img2/02.jpg" class="img-responsive center-block">
+                <p class="p_1">出国旅行，口语太差</p> 
+                <p class="text-center">学伴功能，免费添加全部旅伴。 一起恶补，齐心协力出国不愁！</p> 
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <img src="../img2/03.jpg" class="img-responsive center-block">
+                <p class="p_1">是英语课，也是交友会</p> 
+                <p class="text-center">20多个城市，70多家美联中心， I Show活动课，欢迎一起来玩耍！</p> 
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容3 -->
+    <div class="container content3" style="margin-top: 100px;text-align: center;">
+        <div class="row col-md-12 col-sm-12 col-xs-12">
+            <h2>桥吧英语,专注英语教育</h2>
+        </div>
+        <div class="row col-md-12 col-sm-12 col-xs-12">
+            <p style="font-size: 20px;">教研经验丰富，专业水平优异</p>
+        </div>
+        <div class="row content3_text col-md-12 col-sm-12 col-xs-12" style="margin-top:20px">
+            <div class="content3_box1">
+                <p><img src="https://www.iqbar.net/images/pic-jianqiaojiaocai.png" class="img-responsive center-block" alt=""></p>
+                <h3>剑桥体系原版教材</h3>
+                <p>桥吧在英国伦敦设立教研培训中心，与英国剑桥出版社及英国剑桥考试中心签约《PICARO》和《THiNK》教材，并获得线上授权。</p>
+            </div>
+            <div class="content3_box2">
+                <p><img src="https://www.iqbar.net/images/pic-jinpaiwaijiao.png" class="img-responsive center-block" alt=""></p>
+                <h3>剑桥体系原版教材</h3>
+                <p>桥吧在英国伦敦设立教研培训中心，与英国剑桥出版社及英国剑桥考试中心签约《PICARO》和《THiNK》教材，并获得线上授权。</p>
+            </div>
+            <div class="content3_box3">
+                <p><img src="https://www.iqbar.net/images/pic-jishutuandui.png"  class="img-responsive center-block" alt=""></p>
+                <h3>剑桥体系原版教材</h3>
+                <p>桥吧在英国伦敦设立教研培训中心，与英国剑桥出版社及英国剑桥考试中心签约《PICARO》和《THiNK》教材，并获得线上授权。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    <div class="footer" style="margin-top: 100px;">
+        <div class="container">
+           <div class="row">
+                <ul class="col-md-7 col-sm-7 col-xs-7 as" style="border-right: 1px solid grey;">
+                    <li class="col-md-4 col-sm-4 col-xs-4">
+                        <h4>关于</h4>
+                        <p><a href="##">天猫店</a></p>
+                        <p><a href="##">关于我们</a></p>
+                        <p><a href="##">法律声明</a></p>
+                        <p><a href="##">用户协议</a></p>
+                    </li>
+                    <li class="col-md-4 col-sm-4 col-xs-4">
+                        <h4>主要产品</h4>
+                        <p><a href="##">青少培训产品</a></p>
+                        <p><a href="##">国际培训产品</a></p>
+                        <p><a href="##">成人英语产品</a></p>
+                    </li>
+                    <li class="col-md-4 col-sm-4 col-xs-4">
+                        <h4>联系我们</h4>
+                        <p><a href="##">桥吧教育科技（北京）有限公司</a></p>
+                        <p><a href="##">热线电话：400-×××-××××</a></p>
+                        <p><a href="##">邮箱：××××××××××</a></p>
+                        <p><a href="##">地址：××××××××××</a></p>
+                    </li>
+                </ul>
+                <ul class="col-md-5 col-sm-5 col-xs-5 as2">
+                    <li  class="col-md-6 col-sm-6 col-xs-6">
+                        <img src="https://www.iqbar.net/images/navweibo.png" class=" center-block" alt="">
+                        <p>桥吧官方微博</p>
+                    </li>
+                    <li  class="col-md-6 col-sm-6 col-xs-6">
+                        <img src="https://www.iqbar.net/images/navweixin.jpeg" class=" center-block" alt="">
+                        <p>桥吧微信公众号</p>
+                    </li>
+                </ul>
+           </div>
+           <div class="row"> 
+                <span class="col-md-6 col-sm-6 col-xs-6">Copyright© 2018 · 桥吧教育科技（北京）有限公司. All Rights Reserved</span>
+                <span class="col-md-2 col-sm-2 col-xs-2">京ICP备16013864号</span>
+                <span class="col-md-2 col-sm-2 col-xs-2">京ICP证160560号</span>
+                <span class="col-md-2 col-sm-2 col-xs-2"><img src="https://www.iqbar.net/images/pic_renzheng.png" alt="" style="margin-top: -10px;"></span>
+           </div>
+        </div>
+    </div>
+</body>
+<script src="../bs/js/jquery-3.4.1.min.js"></script>
+<script src="../bs/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $('.list-inline>li:even').css('background-color','#DD6989')
+    })
+    
+</script>
+</html>
